@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  min-height: 100%;
+  background: #f2f2f2;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  padding: 24px 0 40px;
+}
+
+.page {
+  width: min(1200px, calc(100vw - 24px));
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.diagram-card {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 0;
+}
+
+.light-diagram {
+  background: #ececec;
+  padding: 10px 10px 0;
+}
+
+.dark-diagram {
+  background: #050505;
+  padding: 18px 12px 0;
+}
+
+svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
